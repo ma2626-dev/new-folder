@@ -1,0 +1,749 @@
+@font-face {
+    font-family: "Vazir Black";
+    src: url("https://db.onlinewebfonts.com/t/ed49f5f21c55c31f6f76681079b46b6c.eot");
+    src: url("https://db.onlinewebfonts.com/t/ed49f5f21c55c31f6f76681079b46b6c.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/ed49f5f21c55c31f6f76681079b46b6c.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/ed49f5f21c55c31f6f76681079b46b6c.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/ed49f5f21c55c31f6f76681079b46b6c.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/ed49f5f21c55c31f6f76681079b46b6c.svg#Vazir Black")format("svg");
+}
+@font-face {
+    font-family: "Vazir Bold";
+    src: url("https://db.onlinewebfonts.com/t/e917b0bcf49b70d3c671a23c5e2c02c4.eot");
+    src: url("https://db.onlinewebfonts.com/t/e917b0bcf49b70d3c671a23c5e2c02c4.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/e917b0bcf49b70d3c671a23c5e2c02c4.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/e917b0bcf49b70d3c671a23c5e2c02c4.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/e917b0bcf49b70d3c671a23c5e2c02c4.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/e917b0bcf49b70d3c671a23c5e2c02c4.svg#Vazir Bold")format("svg");
+}
+@font-face {
+    font-family: "Vazir Thin";
+    src: url("https://db.onlinewebfonts.com/t/8e8c4e5f273d64b4f1265c920de167f9.eot");
+    src: url("https://db.onlinewebfonts.com/t/8e8c4e5f273d64b4f1265c920de167f9.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/8e8c4e5f273d64b4f1265c920de167f9.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/8e8c4e5f273d64b4f1265c920de167f9.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/8e8c4e5f273d64b4f1265c920de167f9.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/8e8c4e5f273d64b4f1265c920de167f9.svg#Vazir Thin")format("svg");
+}
+@font-face {
+    font-family: "Vazir Medium";
+    src: url("https://db.onlinewebfonts.com/t/34c6152d573b40d80cbfe789ba6d0a60.eot");
+    src: url("https://db.onlinewebfonts.com/t/34c6152d573b40d80cbfe789ba6d0a60.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/34c6152d573b40d80cbfe789ba6d0a60.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/34c6152d573b40d80cbfe789ba6d0a60.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/34c6152d573b40d80cbfe789ba6d0a60.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/34c6152d573b40d80cbfe789ba6d0a60.svg#Vazir Medium")format("svg");
+}
+@font-face {
+    font-family: "Vazir Light";
+    src: url("https://db.onlinewebfonts.com/t/e017395a7da2b12e0ee8b77b7b0cf105.eot");
+    src: url("https://db.onlinewebfonts.com/t/e017395a7da2b12e0ee8b77b7b0cf105.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/e017395a7da2b12e0ee8b77b7b0cf105.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/e017395a7da2b12e0ee8b77b7b0cf105.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/e017395a7da2b12e0ee8b77b7b0cf105.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/e017395a7da2b12e0ee8b77b7b0cf105.svg#Vazir Light")format("svg");
+}
+body{
+  margin: 0;
+  font-family:"Vazir Light",sans-serif;
+  padding-bottom: 1000px;
+  background-color: rgb(250, 252, 253);
+}
+
+
+.top-bar{
+ background:linear-gradient(69deg, rgb(0, 184, 249), rgb(0, 141, 242), rgb(0, 104, 236));
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.header-menu{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1110px;
+  color: white;
+}
+.left-side{
+  display: flex;
+  font-size: 13px;
+  height: 50px;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  flex-shrink: 0;
+}
+.right-side{
+  display: flex;
+  font-size: 13px;
+  flex-shrink: 0;
+}
+
+.menu-button:hover{
+  background: linear-gradient(360deg, rgb(67, 161, 250), rgb(0, 141, 242), rgb(37, 122, 233));
+}
+.menu-button{
+padding-bottom: 16px;
+padding-top: 16px;
+padding-left: 10px;
+padding-right: 10px;
+cursor: pointer;
+}
+.menu-button1{
+padding-bottom: 16px;
+padding-top: 16px;
+padding-left: 10px;
+padding-right: 10px;
+cursor: pointer;
+background: linear-gradient(360deg, rgb(67, 161, 250), rgb(0, 141, 242), rgb(37, 122, 233));
+}
+
+.in-header-mcontainer{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.in-header-container{
+  background-color: rgb(255, 255, 255);
+  height: 83px;
+  display: flex;
+  align-items: center;
+  width: 1100px;
+  justify-content: space-between;
+  align-items: center;
+}
+.left-section-in{
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ flex-shrink: 0;
+}
+.shatel-button{
+  color: white;
+  background-color: rgb(86, 196, 95);
+  border: none;
+  padding-left: 26px;
+  padding-right: 26px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  font-size: 16px;
+  font-family:"Vazir Light",sans-serif;
+  border-radius: 50px;
+}
+.search-icon{
+  width: 38px;
+  height: 38px;
+  border-radius: 50px;
+}
+.right-section-in{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-shrink: 0;
+  margin-left: 20px;
+  position: relative;
+  column-gap: 5px;
+  
+}
+.para{
+  display: flex;
+  padding-left: 26px;
+  align-items: center;
+   height: 83px;
+}
+.para1{
+  display: flex;
+  padding-left: 26px;
+  position: relative;
+  height: 83px;
+  align-items: center;
+  cursor: pointer;
+}
+.dropdown-menu{
+  font-size: 14px;
+  padding-right: 20px;
+  padding-top: 18px;
+  display: flex;
+  column-gap: 30px;
+  direction: rtl;
+  position: absolute;
+  opacity: 1;
+  z-index: 1000;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  width: 900px;
+  right: -50px;
+  top: 83px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.15s;
+  border-top: 3px solid black;
+  cursor: auto;
+}
+.para1:hover .dropdown-menu{
+  opacity: 1;
+  pointer-events: auto;
+}
+.atext, .atext:hover,.atext:visited,.atext:active{
+  text-decoration: none;
+  margin: 0;
+  display: flex;
+  color: black;
+  text-decoration: underline;
+  text-decoration-color: rgb(245, 180, 0);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 10px;
+}
+
+
+
+.search-icon-container{
+  width: 40px;
+  height: 40px;
+  background-color: rgb(202, 202, 202);
+  margin-left: 15px;
+  border-radius: 50px;
+}
+.para2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: right;
+  direction: rtl;
+}
+
+.pic-info-grid-container{
+ padding-left: 10%;
+ padding-right: 10%;
+ display: flex;
+ justify-content: center;
+ margin-top: 80px;
+ justify-content: center;
+ align-items: center;
+}
+@media (max-width:750px){
+  .pic-info-grid-container{
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-bottom: 1070px;
+  }
+}
+
+.pic-info-grid{
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-template-rows: 1fr 1fr;
+ row-gap: 30px;
+ column-gap: 35px;
+ width: 1100px;
+ height: 670px;
+}
+@media (max-width:750px){
+  .pic-info-grid{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    row-gap: 70px;
+  }
+}
+
+
+.pic-info-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  transition: all 0.54s ease;
+  box-shadow: none;
+  
+  
+}
+@media (max-width:750px){
+  .pic-info-box{
+   
+    
+}
+  
+}
+.pic-info-box:hover{
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+  transform: scale(1.04);
+  transform-origin: bottom;
+}
+.pic-info-p1{
+  text-align: center;
+  display: flex;
+  font-weight: bold;
+  margin: 0; 
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+.pic-info-p2{
+  display: flex;
+  direction: rtl; 
+  text-align:center; 
+  font-size: 14PX; 
+  margin: 0; 
+  color: rgb(71, 71, 71);
+  margin-bottom: 3px;
+}
+.pic-info-p3{
+  display: flex;
+  direction: rtl; 
+  text-align:center; 
+  font-size: 14PX; 
+  margin: 0; 
+  color: rgb(71, 71, 71);
+}
+.thumbnail-pic{
+  display: flex;
+  width: 100%;
+}
+
+
+
+
+
+
+
+.pic-info-grid-container2{
+ display: flex; 
+ column-gap: 50px; 
+ padding-left: 10%;
+ padding-right: 10%;
+ background-color: rgb(246, 247, 250);
+ padding-bottom: 90px;
+ padding-top: 30px;
+ margin-top: 70px;
+ align-items: center;
+ justify-content: center;
+}
+@media (max-width:750px){
+  .pic-info-grid-container2{
+    padding-left: 1%;
+    padding-right: 1%;
+    align-items: center;
+    justify-content: center;
+    
+  }
+}
+.pic-info-grid2{
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr 1fr;
+ row-gap: 30px;
+ column-gap: 30px;
+ justify-content: center;
+ width: 1100px;
+ height: 255px;
+}
+@media (max-width:750px){
+  .pic-info-grid2{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    row-gap: 75px;
+    height: 100%;
+  }
+}
+
+.pic-info-box2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  transition: all 0.5s ease;
+  box-shadow: none;
+  
+}
+@media (max-width:750px){
+  .pic-info-box2{
+    width: 100%;
+    height: 120%;
+}
+}
+.pic-info-box2:hover{
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+  transform: scale(1.04);
+  transform-origin: bottom;
+}
+
+.pic-info-mp1{
+  text-align: center;
+  display: flex;
+  font-weight: bold;
+  margin-bottom: 12px;
+  font-size: 16px;
+  text-align: center;
+}
+.thumbnail-pic2{
+  margin: 0;
+  width: 100px;
+  display: flex;
+  margin-bottom: 30px;
+}
+.thumbnail-pic3{
+  margin: 0;
+  width: 100px;
+  display: flex;
+  margin-bottom: 45px;
+}
+.thumbnail-pic4{
+  margin: 0;
+  width: 100px;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.text-description-background {
+  background-color: rgb(240, 251, 255);
+}
+
+.text-description-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3%;
+  padding-top: 3%;
+}
+
+@media(max-width:1100px){
+  .text-description-container{
+   padding-left: 3%;
+   padding-right: 3%;
+}
+}
+
+
+
+
+.text-description-grid1{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: right;
+  justify-content: center;
+  align-items: center;
+  width: 1080px;
+  column-gap: 30px;
+}
+
+@media(max-width:850px){
+  .text-description-grid1{
+    grid-template-columns: 1fr;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
+
+
+
+
+.h2-p{
+  margin: 0; margin-bottom: 5px;
+}
+.text-description-grid-p1{
+  margin: 0; 
+  font-size: 13px; 
+  margin-bottom: 34px; 
+  color: rgb(100, 100, 100);
+}
+.text-description-grid-p2{
+  margin: 0; 
+  font-size: 15px; 
+  color: rgb(80, 80, 80);
+  text-align: justify;
+  text-justify: inter-word;
+  direction: rtl;
+  line-height: 26px;
+}
+
+.text-description-grid-button{
+  margin: 0;
+  border: none;
+  width: 142px;
+  height: 40px;
+  font-family: "Vazir Light",sans-serif;
+  font-size: 15px;
+  color: white;
+  background-color: rgb(89, 150, 239);
+  border-radius: 20px;
+  margin-top: 15px;
+  transition: all 0.23s;
+}
+.text-description-grid-button:hover{
+  background-color: rgb(243, 118, 62);
+}
+.text-description-img{
+  width: 100%;
+}
+.text-decoration1{
+  text-decoration: underline; 
+  text-decoration-color: rgb(245, 180, 0);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 13px;
+}
+
+@media(max-width: 850px ){
+  .text-description-img-con{
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+.text-description-p{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
+.text-description-container2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3%;
+  padding-top: 3%;
+}
+
+@media(max-width:1100px){
+  .text-description-container2{
+   padding-left: 3%;
+   padding-right: 3%;
+}
+}
+
+
+
+
+.text-description-grid2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: right;
+  justify-content: center;
+  align-items: center;
+  width: 1080px;
+  column-gap: 30px;
+  direction: rtl;
+}
+
+@media(max-width:850px){
+  .text-description-grid2{
+    grid-template-columns: 1fr;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
+
+
+
+
+.h2-p2{
+  margin: 0; margin-bottom: 5px;
+}
+.text-description-grid2-p1{
+  margin: 0; 
+  font-size: 13px; 
+  margin-bottom: 34px; 
+  color: rgb(100, 100, 100);
+}
+.text-description-grid2-p2{
+  margin: 0; 
+  font-size: 15px; 
+  color: rgb(80, 80, 80);
+  text-align: justify;
+  text-justify: inter-word;
+  direction: rtl;
+  line-height: 26px;
+}
+
+.text-description-grid-button2{
+  margin: 0;
+  border: none;
+  width: 142px;
+  height: 40px;
+  font-family: "Vazir Light",sans-serif;
+  font-size: 15px;
+  color: white;
+  background-color: rgb(89, 150, 239);
+  border-radius: 20px;
+  margin-top: 15px;
+  transition: all 0.5s;
+}
+.text-description-grid-button2:hover{
+  background-color: rgb(243, 118, 62);
+}
+.text-description-img2{
+  width: 100%;
+}
+.text-decoration2{
+  text-decoration: underline; 
+  text-decoration-color: rgb(245, 180, 0);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 13px;
+}
+
+@media(max-width: 850px ){
+  .text-description-img-con{
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+.text-description-p2{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
+
+
+
+.text-description-container3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3%;
+  padding-top: 3%;
+  margin-top: 50px;
+}
+
+@media(max-width:1100px){
+  .text-description-container3{
+   padding-left: 3%;
+   padding-right: 3%;
+}
+}
+
+.text-description-grid3{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: right;
+  justify-content: center;
+  align-items: center;
+  width: 1100px;
+  column-gap: 30px;
+}
+
+@media(max-width:850px){
+  .text-description-grid3{
+    grid-template-columns: 1fr;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    padding-left: 3%;
+    padding-right: 3%;
+    row-gap: 50px;
+  }
+}
+
+.p3-p{
+  margin: 0; 
+  font-size: 13px; 
+  margin-bottom: 15px; 
+  color: rgb(0, 0, 0);
+}
+.text-description-grid3-p1{
+  margin: 0;
+  margin-bottom: 25px;
+}
+.text-description-grid3-p2{
+  margin: 0; 
+  font-size: 14px; 
+  color: rgb(0, 0, 0);
+  text-align: justify;
+  text-justify: inter-word;
+  direction: rtl;
+  line-height: 24px;
+}
+
+.text-description-grid-button3{
+  margin: 0;
+  border: none;
+  width: 135px;
+  height: 37px;
+  font-family: "Vazir Light",sans-serif;
+  font-size: 15px;
+  color: white;
+  background-color: rgb(89, 150, 239);
+  border-radius: 50px;
+  margin-top: 15px;
+  transition: all 0.5s;
+}
+.text-description-grid-button3:hover{
+  background-color: rgb(243, 118, 62);
+}
+
+.text-decoration3{
+  text-decoration: underline; 
+  text-decoration-color: rgb(245, 180, 0);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 13px;
+}
+
+
+.text-description-p3{
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+}
+
+.bbbb{
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  position: relative;
+}
+.bbbbimg{
+  background-color: rgb(223, 152, 152);
+  transition: all 0.5s;
+}
+.bbbbimg:hover{
+  transform: translateY(-15px);
+}
+
+.cccc{
+  margin: 0; 
+  font-size: 14px; 
+  background-color: #9e9e9e; 
+  color: white; 
+  padding: 5px; 
+  position: absolute; 
+  bottom: 60px; 
+  border-radius: 3pxpx; 
+  opacity: 0; 
+  white-space: nowrap;
+  transition: all 0.5s;
+  border-radius: 5px;
+}
+.bbbb:hover .cccc{
+  opacity: 1;
+  transform: translateY(-15px);
+}
+
+
+
+
+
